@@ -7,10 +7,13 @@
     color:white;
     padding-right:8px;
     padding-bottom: 8px;
+    
 }
 .header_menu {
     display: flex;
     padding: 10px 8px 8px 8px;
+    width: 100%;
+ 
 
 }
 .header_menu > div{

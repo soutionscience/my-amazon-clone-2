@@ -13,6 +13,7 @@ import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { LoginComponent } from './PAGES/login/login.component';
 import {HeaderComponent} from './COMPONENTS/header/header.component';
 import { BannerComponent } from './COMPONENTS/banner/banner.component'
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -31,6 +32,7 @@ import { BannerComponent } from './COMPONENTS/banner/banner.component'
     AppRoutingModule,
     MatIconModule,
     BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
