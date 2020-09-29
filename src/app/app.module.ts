@@ -14,6 +14,8 @@ import { LoginComponent } from './PAGES/login/login.component';
 import {HeaderComponent} from './COMPONENTS/header/header.component';
 import { BannerComponent } from './COMPONENTS/banner/banner.component'
 import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './COMPONENTS/products/products.component';
 
 
 
@@ -25,14 +27,16 @@ import {MatCardModule} from '@angular/material/card';
     CheckoutComponent,
     LoginComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
