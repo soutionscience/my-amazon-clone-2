@@ -16,6 +16,8 @@ import { BannerComponent } from './COMPONENTS/banner/banner.component'
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './COMPONENTS/products/products.component';
+import { ShoppingCartItemComponent } from './COMPONENTS/shopping-cart-item/shopping-cart-item.component';
+import { SubtotalComponent } from './COMPONENTS/subtotal/subtotal.component';
 
 
 
@@ -28,7 +30,9 @@ import { ProductsComponent } from './COMPONENTS/products/products.component';
     LoginComponent,
     HeaderComponent,
     BannerComponent,
-    ProductsComponent
+    ProductsComponent,
+    ShoppingCartItemComponent,
+    SubtotalComponent
   ],
   imports: [
     BrowserModule,

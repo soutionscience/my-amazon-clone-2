@@ -1,0 +1,10 @@
+.checkout{
+    display: flex;
+}
+.checkout_left{
+    flex: 1;
+}
+.checkout_right{
+    justify-content: flex-end;
+    margin-left: 20px;
+}

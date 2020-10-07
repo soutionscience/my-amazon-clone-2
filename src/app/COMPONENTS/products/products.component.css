@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 1;
 }
 
 .product > mat-card > img{

@@ -1,7 +1,7 @@
 <div class="header">
     <nav class="header_top">
       <div class="header_menu">
-        <div class="header_menu_icon">
+        <div class="header_menu_icon" routerLink="/">
           <mat-icon>menu</mat-icon>
   
         </div>
@@ -13,25 +13,25 @@
   
        </div>
      </div>
-     <div class="header_menu_signin">
+     <div class="header_menu_signin" routerLink="/login">
        <span class="header_menu_top_item">Hello, Sign in</span>
        <span class="header_menu_bottom_item">Accounts & Lists</span>
   
      </div>
-     <div class="header_menu_signin">
+     <div class="header_menu_signin" routerLink="/">
       <span class="header_menu_top_item">Returns</span>
       <span class="header_menu_bottom_item">& Orders</span>
   
     </div>
-    <div class="header_menu_cart">
+    <div class="header_menu_cart" routerLink="/checkout">
       <mat-icon>shopping_cart</mat-icon>
-      <p class="header_cart_number">3</p>
+      <p class="header_cart_number">{{shopping_cart.get_shopping_cart_length()}}</p>
     </div>
       </div>
   
     </nav>
     <nav class="header_bottom">
-      <div class="header_bottom_location_text">
+      <div class="header_bottom_location_text" routerLink="/">
         <span class="header_left_line_one">Delivery to</span>
         <span  class="header_left_line_two"> <Strong>Canada</Strong></span>
     </div>

@@ -1,1 +1,17 @@
-<p>checkout works!</p>
+<div class="checkout">
+    <div class="checkout_left">
+        <div class="checkout_empty" *ngIf="shopping_cart.get_shopping_cart_length() == 0">
+            <h2>Your shopping basket is empty</h2>
+            <p>You have no items in your basket</p>
+        </div>
+        <div class="checkout_items" *ngIf="shopping_cart.get_shopping_cart_length() != 0">
+            <p><strong>Shopping Cart</strong></p>  
+            <app-shopping-cart-item [checkout_products] ="shopping_cart_items"></app-shopping-cart-item>
+
+        </div>
+
+    </div>
+    <div class="checkout_right">
+        <app-subtotal></app-subtotal>
+    </div>
+</div>

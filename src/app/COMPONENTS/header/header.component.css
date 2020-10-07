@@ -1,4 +1,8 @@
-
+.header{
+    position: sticky;
+    z-index: 100;
+    top:0;
+}
 .header_top{
     height: 60px;
     background-color: #0F1111;
