@@ -13,8 +13,9 @@
   
        </div>
      </div>
-     <div routerLink="/login" class="header_menu_signin">
-       <span class="header_menu_top_item">Hello, Sign in</span>
+     <div  class="header_menu_signin">
+       <span routerLink="/login" class="header_menu_top_item" *ngIf="!auth.isLoggedIn()">Hello, Sign in</span>
+       <span (click)="logout()" class="header_menu_top_item" *ngIf="auth.isLoggedIn()">Hello, {{auth.getUser()}}</span>
        <span class="header_menu_bottom_item">Accounts & Lists</span>
   
      </div>

@@ -1,0 +1,65 @@
+.login{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.login_container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.login_logo{
+    object-fit:contain;
+    width:100px;
+    margin: 12px 20px 0px 2px;
+}
+.login_form{
+    border:solid lightgray 1px;
+    padding: 20px;
+    width: 300px;
+}
+.login_form >h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+form >h5{
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+form >input{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}  
+form >p{
+    margin-top: 15px;
+    font-size: 12px;
+    
+}
+.login_singIn_button{
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    color: black;
+    border-color: #a88134 #9c7e31 #846a29;
+}
+
+.login_create_button{
+
+    border: 1px solid;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    color: black;
+    border-color:grey
+
+}

@@ -18,6 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './COMPONENTS/products/products.component';
 import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
 import { CheckoutSubtotalComponent } from './COMPONENTS/checkout-subtotal/checkout-subtotal.component';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire';
+import {firebaseConfig} from './SHARED/auth.config'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -40,7 +44,9 @@ import { CheckoutSubtotalComponent } from './COMPONENTS/checkout-subtotal/checko
     MatIconModule,
     BrowserAnimationsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

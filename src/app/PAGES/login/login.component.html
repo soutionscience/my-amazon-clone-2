@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="login">
+
+    <div class="login_container">
+        <img routerLink="/" class="login_logo" src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"/>
+        <div class="login_form">
+            <h1>Sign-in</h1>
+            {{loginForm.value.email}} -{{loginForm.value.password}}
+            <form action="" [formGroup]="loginForm">
+                <h5>Email</h5>
+               <input type="email" formControlName="email"> 
+               <h5>Password</h5>
+               <input type="password" formControlName="password">
+               <button class="login_singIn_button" (click)="signIn()">Sign in</button>
+               <p class="login_terms">By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+               <button class="login_create_button" (click)="createAccout()">Create your amazon account</button>
+            </form>
+        </div>
+
+
+    </div>
+</div>
