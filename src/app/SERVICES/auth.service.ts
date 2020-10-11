@@ -49,8 +49,7 @@ export class AuthService {
   }
 
   isLoggedIn(){
-    const user = localStorage.getItem('user');
-    return user? true: false;
+ return localStorage.getItem('user')? true: false;
   }
   getUser(){
     const user = localStorage.getItem('user');
