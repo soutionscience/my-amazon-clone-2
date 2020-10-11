@@ -1,11 +1,5 @@
 {
-  "targets": {
-    "test-me-84777": {
-      "hosting": {
-        "my-amazon-clone": [
-          "test-me-84777"
-        ]
-      }
-    }
+  "projects": {
+    "default": "test-me-84777"
   }
 }
