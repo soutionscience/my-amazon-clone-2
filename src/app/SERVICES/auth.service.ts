@@ -14,8 +14,6 @@ export class AuthService {
           console.log('user logged in ', user);
           this.user = user.email;
           localStorage.setItem('user', this.user);
-        }else{
-          localStorage.setItem('user', this.user);
         }
       })
       
@@ -49,7 +47,8 @@ export class AuthService {
   }
 
   isLoggedIn(){
- return localStorage.getItem('user')? true: false;
+    const user  = localStorage.getItem('user')
+    return user? true:false 
   }
   getUser(){
     const user = localStorage.getItem('user');
